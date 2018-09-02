@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>Welcome to MyCalculator!</h2>
+    <div class="result">
+      <input type="text" (ngModel)="result" value="{{result}}" name="result" disabled>
+
+    </div>
+    <div class="operators">
+      <div (click)="addition()">+</div>
+      <div (click)="substraction()">-</div>
+      <div (click)="multiplication()">x</div>
+      <div (click)="division()">/</div>
+    </div>
+    <div class="numbers">
+      <div (click)="on7()">7</div>
+      <div (click)="on8()">8</div>
+      <div (click)="on9()">9</div>
+      <div>=</div>
+    </div>
+    <div class="numbers">
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+    </div>
+    <div class="numbers">
+      <div (click)="on1()">1</div>
+      <div (click)="on2()">2</div>
+      <div (click)="on3()">3</div>
+    </div>
+    <div class="numbers">
+        <div (click)="on0()">0</div>
+        <div (click)="onDot()">.</div>
+        <div (click)="onC()">C</div>
+      </div>
+</ion-content>
