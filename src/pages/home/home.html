@@ -17,20 +17,14 @@
       <div (click)="division()">/</div>
     </div>
     <div class="numbers">
-      <div (click)="on7()">7</div>
-      <div (click)="on8()">8</div>
-      <div (click)="on9()">9</div>
+      <div (click)="onNumber(n)" *ngFor="let n of [7,8,9]">{{n}}</div>
       <div (click)="doCalcul()">=</div>
     </div>
     <div class="numbers">
-      <div (click)="on4()">4</div>
-      <div (click)="on5()">5</div>
-      <div (click)="on6()">6</div>
+      <div (click)="onNumber(n)" *ngFor="let n of [4,5,6]">{{n}}</div>
     </div>
     <div class="numbers">
-      <div (click)="on1()">1</div>
-      <div (click)="on2()">2</div>
-      <div (click)="on3()">3</div>
+      <div (click)="onNumber(n)" *ngFor="let n of [1,2,3]">{{n}}</div>
     </div>
     <div class="numbers">
         <div (click)="on0()">0</div>
